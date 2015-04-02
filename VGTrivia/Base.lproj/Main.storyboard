@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="VGTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nb-Ny-V5O">
+                                <rect key="frame" x="16" y="292" width="288" height="30"/>
+                                <state key="normal" title="Answer One">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBY-d6-6bm">
+                                <rect key="frame" x="16" y="352" width="288" height="30"/>
+                                <state key="normal" title="Answer Two">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZ0-cH-aBR">
+                                <rect key="frame" x="16" y="407" width="288" height="30"/>
+                                <state key="normal" title="Answer Four">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Game Trivia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWj-T6-Y2K">
+                                <rect key="frame" x="95" y="70" width="138.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiL-ge-bSD">
+                                <rect key="frame" x="16" y="151" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JI-YV-zhG">
+                                <rect key="frame" x="16" y="463" width="288" height="30"/>
+                                <state key="normal" title="Answer Three">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RWj-T6-Y2K" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="0bM-bR-U8Y"/>
+                            <constraint firstItem="hBY-d6-6bm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="1zz-vW-XZ3"/>
+                            <constraint firstItem="pZ0-cH-aBR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="4d7-nj-b4H"/>
+                            <constraint firstItem="hBY-d6-6bm" firstAttribute="top" secondItem="9Nb-Ny-V5O" secondAttribute="bottom" constant="30" id="4la-j9-cKf"/>
+                            <constraint firstItem="hBY-d6-6bm" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="5Bf-yk-xPP"/>
+                            <constraint firstAttribute="centerX" secondItem="RWj-T6-Y2K" secondAttribute="centerX" constant="-4.5" id="5XB-cG-pcT"/>
+                            <constraint firstItem="6JI-YV-zhG" firstAttribute="top" secondItem="pZ0-cH-aBR" secondAttribute="bottom" constant="26" id="9gQ-Nc-EMQ"/>
+                            <constraint firstItem="SiL-ge-bSD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="BAh-pr-O3h"/>
+                            <constraint firstItem="9Nb-Ny-V5O" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="BbH-Vc-0GK"/>
+                            <constraint firstItem="9Nb-Ny-V5O" firstAttribute="top" secondItem="SiL-ge-bSD" secondAttribute="bottom" constant="120.5" id="Buj-o7-xwf"/>
+                            <constraint firstItem="pZ0-cH-aBR" firstAttribute="top" secondItem="hBY-d6-6bm" secondAttribute="bottom" constant="25" id="Cph-Kc-Mk2"/>
+                            <constraint firstItem="6JI-YV-zhG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Dsj-wb-lCS"/>
+                            <constraint firstItem="9Nb-Ny-V5O" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="GZ6-Wu-zfs"/>
+                            <constraint firstItem="SiL-ge-bSD" firstAttribute="top" secondItem="RWj-T6-Y2K" secondAttribute="bottom" constant="60.5" id="JAM-C9-XtD"/>
+                            <constraint firstItem="pZ0-cH-aBR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Udh-Vg-ZYG"/>
+                            <constraint firstItem="6JI-YV-zhG" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="XdX-08-WHs"/>
+                            <constraint firstItem="SiL-ge-bSD" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Xt4-TM-dsD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAnswerFour" destination="6JI-YV-zhG" id="Sal-Ub-RkI"/>
+                        <outlet property="btnAnswerOne" destination="9Nb-Ny-V5O" id="7Vq-vi-i4j"/>
+                        <outlet property="btnAnswerThree" destination="pZ0-cH-aBR" id="wQE-P9-8xb"/>
+                        <outlet property="btnAnswerTwo" destination="hBY-d6-6bm" id="MSI-1i-snV"/>
+                        <outlet property="labelQuestionTitle" destination="SiL-ge-bSD" id="US6-jE-iOj"/>
+                        <segue destination="G1s-1e-npB" kind="modal" identifier="displayAnswer" id="0US-SO-rBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="366"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="NIs-Lz-W3k">
+            <objects>
+                <viewController id="G1s-1e-npB" customClass="AnswerViewController" customModule="VGTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="475-Vz-zi2"/>
+                        <viewControllerLayoutGuide type="bottom" id="FyY-4K-Pib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5K6-0H-TZc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-kM-XLq">
+                                <rect key="frame" x="76" y="273" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct answer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-21-oAn">
+                                <rect key="frame" x="16" y="335" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-gX-oAZ">
+                                <rect key="frame" x="146" y="335" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGa-FQ-RCg">
+                                <rect key="frame" x="121" y="426" width="79" height="30"/>
+                                <state key="normal" title="Try Another">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GkD-nC-PyR" kind="unwind" unwindAction="close:" id="YkG-eY-gUc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right/Wrong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eON-vQ-huC">
+                                <rect key="frame" x="146" y="273" width="158" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="RF4-O8-mk3"/>
+                                    <constraint firstAttribute="height" constant="21" id="gdN-Ua-bHS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dNN-gX-oAZ" firstAttribute="baseline" secondItem="HO5-21-oAn" secondAttribute="baseline" id="8Mq-iV-3Ia"/>
+                            <constraint firstItem="SGa-FQ-RCg" firstAttribute="leading" secondItem="5K6-0H-TZc" secondAttribute="leadingMargin" constant="105" id="8cC-UP-kqf"/>
+                            <constraint firstItem="FyY-4K-Pib" firstAttribute="top" secondItem="SGa-FQ-RCg" secondAttribute="bottom" constant="112" id="LMO-cn-1fP"/>
+                            <constraint firstItem="eON-vQ-huC" firstAttribute="leading" secondItem="dNN-gX-oAZ" secondAttribute="leading" id="McF-Fc-iyY"/>
+                            <constraint firstItem="eON-vQ-huC" firstAttribute="leading" secondItem="gOV-kM-XLq" secondAttribute="trailing" constant="8" symbolic="YES" id="Q9O-hx-xMM"/>
+                            <constraint firstItem="HO5-21-oAn" firstAttribute="leading" secondItem="5K6-0H-TZc" secondAttribute="leadingMargin" id="Tkw-63-LJr"/>
+                            <constraint firstItem="gOV-kM-XLq" firstAttribute="top" secondItem="475-Vz-zi2" secondAttribute="bottom" constant="253" id="UyA-qr-4ao"/>
+                            <constraint firstItem="dNN-gX-oAZ" firstAttribute="centerY" secondItem="HO5-21-oAn" secondAttribute="centerY" id="Vki-c7-TVm"/>
+                            <constraint firstItem="gOV-kM-XLq" firstAttribute="leading" secondItem="5K6-0H-TZc" secondAttribute="leadingMargin" constant="60" id="XGc-15-2fJ"/>
+                            <constraint firstItem="dNN-gX-oAZ" firstAttribute="top" secondItem="eON-vQ-huC" secondAttribute="bottom" constant="41" id="Zqd-8X-N3o"/>
+                            <constraint firstItem="HO5-21-oAn" firstAttribute="top" secondItem="gOV-kM-XLq" secondAttribute="bottom" constant="41" id="czl-Zs-gjM"/>
+                            <constraint firstItem="eON-vQ-huC" firstAttribute="trailing" secondItem="dNN-gX-oAZ" secondAttribute="trailing" id="hLB-ku-fGA"/>
+                            <constraint firstItem="dNN-gX-oAZ" firstAttribute="top" secondItem="HO5-21-oAn" secondAttribute="top" id="ien-2E-UvM"/>
+                            <constraint firstItem="eON-vQ-huC" firstAttribute="firstBaseline" secondItem="gOV-kM-XLq" secondAttribute="firstBaseline" id="kyo-RU-ebR"/>
+                            <constraint firstItem="eON-vQ-huC" firstAttribute="baseline" secondItem="gOV-kM-XLq" secondAttribute="baseline" id="nNP-cO-TqE"/>
+                            <constraint firstItem="SGa-FQ-RCg" firstAttribute="top" secondItem="dNN-gX-oAZ" secondAttribute="bottom" constant="70" id="vsE-3q-wGp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SGa-FQ-RCg" secondAttribute="trailing" constant="104" id="xro-JV-lvw"/>
+                            <constraint firstItem="dNN-gX-oAZ" firstAttribute="bottom" secondItem="HO5-21-oAn" secondAttribute="bottom" id="zs6-Nc-6MN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="correctAnswer" destination="dNN-gX-oAZ" id="4pG-ck-haK"/>
+                        <outlet property="rightOrNot" destination="eON-vQ-huC" id="PMf-iB-ElA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taW-qo-k15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GkD-nC-PyR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="366"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
